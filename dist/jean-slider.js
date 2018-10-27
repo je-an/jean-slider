@@ -1314,7 +1314,7 @@ define('src/Slider',[ // jscs:ignore
          * @param {Boolean} [options.isExpanded=false] - True if slider is expanded, false otherwise
          * @param {Number} [options.width=300] - width of the slider - needed if slider is placed left or right
          * @param {NUmber} [options.height=300] - height of the slider - needed if slider is placed top or botton
-         * @param {Slider.placementType} [options.placementType=Slider.placementType.LEFT] - Where the slider will be placed
+         * @param {Slider.placementType} [options.placementType=Slider.placementType.LEFT] - side of the screen, where the slider will be placed
          */
         var Slider = function (options) {
             Inheritance.inheritConstructor(DomElement, this, Merge({ // jscs:ignore
@@ -1359,6 +1359,7 @@ define('src/Slider',[ // jscs:ignore
             }
             element.setAttribute("data-jean-slider-id", id);
             this.body.appendChild(element);
+            return true;
         };
         /** @param {String} id - the id of the element which shall be removed */
         Slider.prototype.remove = function (id) {
@@ -1400,11 +1401,11 @@ define('src/Slider',[ // jscs:ignore
         Slider.prototype._placeButton = function (placementType) {
             var btn = this.btn, options = this.options, half = "50%", isExpanded = options.isExpanded,
                 isTopOrBottom = (placementType === this.placementType.TOP || placementType === this.placementType.BOTTOM);
-                btn.classList.add("jean-slider-button-transition-" + placementType);
+            btn.classList.add("jean-slider-button-transition-" + placementType);
             if (isTopOrBottom) {
-                btn.style.left = half;                
+                btn.style.left = half;
             } else {
-                btn.style.top = half;                
+                btn.style.top = half;
             }
             if (isExpanded) {
                 btn.style[placementType] = isTopOrBottom ? options.height : options.width;
