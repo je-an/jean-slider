@@ -1,7 +1,7 @@
 {
   "name": "jean-slider",
-  "version": "0.0.0",
-  "description": "Provides a slider control",
+  "version": "1.0.0",
+  "description": "Provides functionality for a slider mechanism",
   "main": "dist/jean-slider.js",
   "scripts": {
     "test": "open spec/spec-runner.html in browser"
@@ -16,7 +16,9 @@
     "jean-failure": "^1.0.1",
     "jean-inheritance": "^1.0.4",
     "jean-merge": "^1.0.0",
-    "jean-type-check": "^1.5.1",
+    "jean-type-check": "^1.5.2"
+  },
+  "devDependencies": {
     "require-css": "^0.1.10",
     "text": "github:requirejs/text"
   },

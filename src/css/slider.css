@@ -1,0 +1,75 @@
+.jean-slider {
+  z-index: 10000;
+  position: fixed;
+  overflow: hidden;
+  background: rgba(51, 51, 51, 0.7);
+}
+.jean-slider .header {
+  color: white;
+  text-align: center;
+}
+.jean-slider .body {
+  color: white;
+}
+.jean-slider .button {
+  color: white;
+  background: rgba(51, 51, 51, 0.7);
+  position: fixed;
+  padding: 3px;
+}
+.jean-slider .button:hover {
+  color: lightgreen;
+  cursor: pointer;
+}
+.jean-slider .jean-slider-button-transition-top {
+  transition: top 0.3s;
+}
+.jean-slider .jean-slider-button-transition-right {
+  transition: right 0.3s;
+}
+.jean-slider .jean-slider-button-transition-bottom {
+  transition: bottom 0.3s;
+}
+.jean-slider .jean-slider-button-transition-left {
+  transition: left 0.3s;
+}
+.left-or-right {
+  width: 0px;
+  height: 100%;
+  top: 0;
+  transition: width 0.3s;
+}
+.top-or-bottom {
+  width: 100%;
+  height: 0px;
+  left: 0;
+  transition: height 0.3s;
+}
+.jean-slider-place-left {
+  width: 0px;
+  height: 100%;
+  top: 0;
+  transition: width 0.3s;
+  left: 0;
+}
+.jean-slider-place-right {
+  width: 0px;
+  height: 100%;
+  top: 0;
+  transition: width 0.3s;
+  right: 0;
+}
+.jean-slider-place-top {
+  width: 100%;
+  height: 0px;
+  left: 0;
+  transition: height 0.3s;
+  top: 0;
+}
+.jean-slider-place-bottom {
+  width: 100%;
+  height: 0px;
+  left: 0;
+  transition: height 0.3s;
+  bottom: 0;
+}

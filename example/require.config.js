@@ -7,6 +7,7 @@ var require = {
         "normalize": "lib/normalize",
         "bootstrap": "lib/bootstrap",
         Slider: "../dist/jean-slider",
+        DomUtil: "../node_modules/jean-dom-util/dist/jean-dom-util"
     },
     stubModules: []
 };

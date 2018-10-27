@@ -1,7 +1,18 @@
-require(["Slider", "css!bootstrap"], function (Slider) {
-    var slider = new Slider({
-        height: 500
+require(["DomUtil", "Slider", "css!bootstrap"], function (DomUtil, Slider) {
+    var sliderTop = new Slider({
+        placementType: Slider.placementType.TOP
     });
-    document.body.style.padding = "5px";
-    document.body.appendChild(slider.element);
+    document.body.appendChild(sliderTop.element);
+    var sliderRight = new Slider({
+        placementType: Slider.placementType.RIGHT
+    });
+    document.body.appendChild(sliderRight.element);
+    var sliderBottom = new Slider({
+        placementType: Slider.placementType.BOTTOM
+    });
+    document.body.appendChild(sliderBottom.element);
+    var sliderLeft = new Slider({
+        placementType: Slider.placementType.LEFT
+    });
+    document.body.appendChild(sliderLeft.element);
 });
