@@ -47,7 +47,7 @@ define([ // jscs:ignore
                 placementType: TypeCheck.isEnumValue(options.placementType, this.placementType) ? options.placementType : this.placementType.BOTTOM
             }, TypeCheck.isDefined(options) ? options : {}));
             this.body = DomUtil.getChildByClass(this.element, "body");
-            this.btn = DomUtil.getChildByClass(this.element, "button");
+            this.btn = DomUtil.getChildByClass(this.element, "toogle");
             this.btn.addEventListener("click", this._onBtnClick.bind(this));
             this._place(this.options.placementType);
         };

@@ -11,13 +11,13 @@
 .jean-slider .body {
   color: white;
 }
-.jean-slider .button {
+.jean-slider .toogle {
   color: white;
   background: rgba(51, 51, 51, 0.7);
   position: fixed;
   padding: 3px;
 }
-.jean-slider .button:hover {
+.jean-slider .toogle:hover {
   color: lightgreen;
   cursor: pointer;
 }
