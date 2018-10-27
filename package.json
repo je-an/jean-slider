@@ -1,0 +1,27 @@
+{
+  "name": "jean-slider",
+  "version": "0.0.0",
+  "description": "Provides a slider control",
+  "main": "dist/jean-slider.js",
+  "scripts": {
+    "test": "open spec/spec-runner.html in browser"
+  },
+  "keywords": [],
+  "author": "Jeremias Andris",
+  "license": "MIT",
+  "dependencies": {
+    "jean-amd": "1.0.3",
+    "jean-dom-element": "^1.2.2",
+    "jean-dom-util": "^1.2.3",
+    "jean-failure": "^1.0.1",
+    "jean-inheritance": "^1.0.4",
+    "jean-merge": "^1.0.0",
+    "jean-type-check": "^1.5.1",
+    "require-css": "^0.1.10",
+    "text": "github:requirejs/text"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/je-an/jean-slider.git"
+  }
+}
