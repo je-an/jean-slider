@@ -1,7 +1,7 @@
 ({
     baseUrl: '.',
     out: 'dist/jean-slider.js',
-    optimize: 'none',
+    optimize: 'uglify2',
     name: 'node_modules/jean-amd/dist/jean-amd',
     include: ["src/Slider"],
     wrap: {
@@ -31,5 +31,6 @@
         Merge: "node_modules/jean-merge/src/Merge",
         "slider-html": "src/html/slider.html",
         "slider-css": "src/css/slider"
-    }
+    },
+    stubModules: ["css", "text", "normalize", "css-builder"]
 })
