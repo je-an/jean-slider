@@ -8,11 +8,13 @@ require(["DomUtil", "Slider", "css!bootstrap"], function (DomUtil, Slider) {
     });
     document.body.appendChild(sliderRight.element);
     var sliderBottom = new Slider({
-        placementType: Slider.placementType.BOTTOM
+        placementType: Slider.placementType.BOTTOM,
+        height: 30
     });
     document.body.appendChild(sliderBottom.element);
     var sliderLeft = new Slider({
-        placementType: Slider.placementType.LEFT
+        placementType: Slider.placementType.LEFT,
+        width: "50%"
     });
     document.body.appendChild(sliderLeft.element);
 });

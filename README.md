@@ -38,7 +38,7 @@ require(["path/to/Slider"], function(Slider){
 **Options**
 
 - **isExpanded**: `Boolean` - `optional` - True if slider is expanded, false otherwise
-- **width**: `Number` - `optional` - width of the slider - needed if slider is placed left or right
+- **width**: `Number|String` - `optional` - width of the slider in px or percentage - needed if slider is placed left or right
 - **height**: `Number` - `optional` - height of the slider - needed if slider is placed top or botton
 - **placementType**: `Slider.placementType` - `optional` - side of the screen, where the slider will be placed
 
